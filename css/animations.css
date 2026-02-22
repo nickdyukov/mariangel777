@@ -1,0 +1,35 @@
+/* ====== Page load animation  ====== */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateX(290px);
+    filter: blur(1rem);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+    filter: blur(0);
+  }
+}
+
+main, footer {
+  animation: fadeIn 1.2s ease forwards;
+  will-change: transform, opacity, filter;
+}
+
+/* ====== Language menu animation  ====== */
+@keyframes LngMenu {
+  0% {
+    opacity: 0;
+    transform: translateX(-180px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+nav.LngMenu.active {
+  animation: LngMenu 0.8s ease forwards;
+  will-change: transform, opacity;
+}
