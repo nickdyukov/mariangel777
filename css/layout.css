@@ -1,15 +1,15 @@
 /* ====== Light / Dark theme ====== */
-body { background: #ffffff; }
+body.light { background: #ffffff; }
 body.dark { background: #121212 }
 
-/* ====== Main content layout ====== */
+/* ====== Main layout ====== */
 main {
-  padding-top: 4.8rem;
+  padding-top: 5rem;
   display: flex;
   flex-direction: column;
   text-align: center;
   align-items: center;
-  gap: 1.8rem;
+  gap: 1.5rem;
 }
 
 .main-content,
@@ -18,23 +18,25 @@ main {
   background: #fffefe;
   border: 4px solid #111;
   border-radius: 3rem;
-  padding: 1rem;
+  padding: 1.2rem;
   transition: transform 0.6s ease;
 }
 
 .main-content { width: 33rem; }
-.about { width: 46rem; }
-.social { width: 29rem; }
+.about { width: 50rem; }
+.social { width: 30rem; }
 
+img.mariangel777-photo:hover,
 .main-content:hover,
 .about:hover,
 .social:hover,
-img.mariangel777-photo:hover {
+img.track-img:hover,
+.social-links:hover {
   transform: translateY(-1px) scale(1.01);
 }
 
 footer {
-  padding-top: 1.6rem;
+  padding-top: 1rem;
   display: block;
   flex-direction: column;
   text-align: center;
@@ -46,7 +48,7 @@ footer {
   background: #fffefe;
   border: 4px solid #111;
   border-radius: 3rem;
-  padding: 1rem;
+  padding: 1.2rem;
   transition: transform 0.6s ease;
 }
 
@@ -63,10 +65,8 @@ body.dark .social-links {
 
 /* ====== Responsive adjustments ====== */
 @media (max-width: 1024px) { 
-  .about {
-    max-width: 92%; }
+  .about { max-width: 88%; }
   .main-content, 
   .social,
-  .social-links { 
-    max-width: 88%; }
+  .social-links { max-width: 80%; }
 }
