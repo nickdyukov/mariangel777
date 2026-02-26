@@ -1,5 +1,5 @@
 /* ====== Page load animation  ====== */
-@keyframes fadeIn {
+@keyframes fade-in {
   0% {
     opacity: 0;
     transform: translateX(290px);
@@ -13,12 +13,12 @@
 }
 
 main, footer {
-  animation: fadeIn 1.2s ease forwards;
+  animation: fade-in 1.2s ease forwards;
   will-change: transform, opacity, filter;
 }
 
 /* ====== Language menu animation  ====== */
-@keyframes LngMenu {
+@keyframes lng-menu {
   0% {
     opacity: 0;
     transform: translateX(-180px);
@@ -29,7 +29,7 @@ main, footer {
   }
 }
 
-nav.LngMenu.active {
-  animation: LngMenu 0.8s ease forwards;
+nav.lng-menu.active {
+  animation: lng-menu 0.8s ease forwards;
   will-change: transform, opacity;
 }

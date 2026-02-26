@@ -14,7 +14,7 @@
   z-index: 1;
 }
 
-nav.LngMenu {
+nav.lng-menu {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -23,7 +23,7 @@ nav.LngMenu {
   gap: 1rem;
 }
 
-nav.LngMenu.active {
+nav.lng-menu.active {
   padding: 1.2rem;
   background: #000;
   left: 0.5rem;
