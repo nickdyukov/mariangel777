@@ -14,7 +14,7 @@
   z-index: 1;
 }
 
-nav.lng-menu {
+nav.lang-menu {
   display: flex;
   flex-direction: column;
   position: fixed;
@@ -23,7 +23,7 @@ nav.lng-menu {
   gap: 1rem;
 }
 
-nav.lng-menu.active {
+nav.lang-menu.active {
   padding: 1.2rem;
   background: #000;
   left: 0.5rem;
