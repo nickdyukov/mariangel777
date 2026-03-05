@@ -20,4 +20,4 @@ Multilingual website for blogger Mariangel777.
 
 ## Author
 - Name: Nikita Dyukov (Nick Dyukov)
-- GitHub: [dyukovnick](https://github.com/dyukovnick)
+- GitHub: [nickdyukov](https://github.com/nickdyukov)
