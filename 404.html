@@ -1,11 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>404 — Page Not Found</title>
+    <title>404 - Page Not Found</title>
 
     <!-- ====== Meta ====== -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="404 - Page not found on mariangel777.vip. Sorry, we can’t find the page you’re looking for.">
+    <meta name="author" content="NickDyukov">
+    <meta name="robots" content="noindex, follow">
+    <meta property="og:title" content="404 - Page Not Found">
+    <meta property="og:description" content="Sorry, we can’t find the page you’re looking for.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://mariangel777.vip/404.html">
+    <meta name="theme-color" content="#000000">
+
+    <link rel="canonical" href="https://mariangel777.vip/404.html">
+    
+    <!-- ====== Favicons ====== -->
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/icons/favicons/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/icons/favicons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/icons/favicons/favicon-16x16.png">
+    <link rel="shortcut icon" href="/assets/icons/favicons/favicon.ico">
+    <link rel="icon" type="image/svg+xml" href="/assets/icons/favicons/favicon.svg">
+    <link rel="manifest" href="/assets/icons/favicons/site.webmanifest">
+    <meta name="apple-mobile-web-app-title" content="Mariangel777">
 
     <!-- ====== CSS ====== -->
     <style>
@@ -39,16 +58,17 @@
       }
 
       p { 
-        font-size: 1.4rem;
+        font-size: 1.3rem;
         font-weight: 500;
-        margin: 0 0 1rem 0;
+        margin: 0;
+        margin-bottom: 1.5rem;
       }
 
       a {
         display: inline-block;
         font-size: 1rem;
         font-weight: 500;
-        padding: 0.75rem 1.25rem;
+        padding: 0.85rem;
         background: #262896;
         color: #fff;
         text-decoration: none;
@@ -57,20 +77,26 @@
       }
 
       a:hover {
-        transform: scale(1.04);
+        transform: scale(1.06);
         background: #3032bd;
+      }
+
+      @media (max-width: 1024px) {
+        main {max-width: 80%}
       }
     </style>
   </head>
-
-    <body>
+  <body>
+    <noscript>
+      <p>JavaScript is disabled. To use this site, please enable JavaScript in your browser.</p>
+    </noscript>
 
     <main>
       <h1>404</h1>
-      <p>Sorry, we can’t find the page you’re looking for.</p>
-      <a href="/">Go back</a>
+      <p data-i18n="error_message">Sorry, we can’t find the page you’re looking for.</p>
+      <a data-i18n="error_home_link" href="/">Go back</a>
     </main>
 
-    <script type="module" src="/js/themes.js"></script>
+    <script type="module" src="/js/index.js"></script>
   </body>
 </html>
