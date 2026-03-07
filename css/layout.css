@@ -65,8 +65,8 @@ body.dark .social-links {
 
 /* ====== Responsive adjustments ====== */
 @media (max-width: 1024px) { 
-  .about { max-width: 88%; }
-  .main-content, 
+  .about,
+  .main-content,
   .social,
-  .social-links { max-width: 80%; }
+  .social-links { max-width: 88%; }
 }
