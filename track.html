@@ -12,7 +12,9 @@
     <meta property="og:description" content="Listen to 'Нас не догнать' by Mariangel777 & Missann_66. Available on YouTube, VK, TikTok, Apple Music, Amazon Music and Yandex Music.">
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://mariangel777.vip/track.html">
-    <meta name="theme-color" content="#000000">
+    <meta name="color-scheme" content="light dark">
+    <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#121212" media="(prefers-color-scheme: dark)">
 
     <!-- ===== CSS ===== -->
     <link rel="stylesheet" href="/css/index.css">
@@ -47,16 +49,29 @@
     <!-- ====== Header ====== -->
     <header>
       <div class="top-bar">
+        <button class="mobile-btn" aria-label="Open menu"><img src="/assets/images/menu.png" alt=""></button>
+      <nav class="mobile-menu" aria-label="Language selection">
+        <button data-i18n="theme_toggle" class="mobile-theme-toggle" aria-label="Switch between light and dark theme">Theme toggle</button>
+        <button data-lang="en">English</button>
+        <button data-lang="ru">Русский</button>
+        <button data-lang="es">Español</button>
+        <button data-lang="ja">日本語</button>
+        <button data-lang="zh">中文</button>
+        <button data-lang="hi">हिन्दी</button>
+      </nav>
+      <div>
         <button data-i18n="lang_btn" class="lang-btn" aria-label="Open language menu">Languages</button>
+        <button data-i18n="home_btn" class="home-btn" aria-label="Go back to home page">Back to home page</button>
+      </div>
       <nav class="lang-menu" aria-label="Language selection">
         <button data-lang="en">English</button>
         <button data-lang="ru">Русский</button>
         <button data-lang="es">Español</button>
+        <button data-lang="ja">日本語</button>
+        <button data-lang="zh">中文</button>
+        <button data-lang="hi">हिन्दी</button>
       </nav>
-      <div>
         <button data-i18n="theme_toggle" class="theme-toggle" aria-label="Switch between light and dark theme">Theme toggle</button>
-      </div>
-      </div>
     </header>
 
     <!-- ====== Main ====== -->
