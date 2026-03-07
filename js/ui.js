@@ -5,19 +5,17 @@ const savedTheme = localStorage.getItem("theme") || "dark";
 document.body.classList.toggle("dark", savedTheme === "dark");
 document.body.classList.toggle("light", savedTheme === "light");
 
-// === Theme toggle button ===
-const themeToggle = document.querySelector(".theme-toggle");
+const themeToggles = document.querySelectorAll(".theme-toggle, .mobile-theme-toggle");
 
-if (themeToggle) { 
-  themeToggle.addEventListener("click", () => {
-    // === Toggle between dark and light themes ===
+themeToggles.forEach(btn => {
+  btn.addEventListener("click", () => {
     const isDark = document.body.classList.toggle("dark");
     document.body.classList.toggle("light", !isDark);
 
-    // Save the selected theme in localStorage
+    // === Save the selected theme in localStorage ===
     localStorage.setItem("theme", isDark ? "dark" : "light");
-  }); 
-}
+  });
+});
 
 // ====== Language menu ======
 const languageBtn = document.querySelector(".lang-btn");
@@ -33,6 +31,24 @@ if (languageBtn && languageMenu) {
   document.addEventListener("click", (event) => {
     if (!languageBtn.contains(event.target) && !languageMenu.contains(event.target)) {
       languageMenu.classList.remove("active");
+    }
+  });
+}
+
+// ====== Mobile menu ======
+const mobileBtn = document.querySelector(".mobile-btn");
+const mobileMenu = document.querySelector(".mobile-menu");
+
+// === Toggle menu open/close when menu button is clicked ===
+if (mobileBtn && mobileMenu) {
+  mobileBtn.addEventListener("click", () => {
+    mobileMenu.classList.toggle("active");
+  });
+
+  // === Close the mobile menu when clicking outside of it ===
+  document.addEventListener("click", (event) => {
+    if (!mobileBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
+      mobileMenu.classList.remove("active");
     }
   });
 }
