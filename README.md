@@ -3,7 +3,7 @@
 Multilingual website for blogger Mariangel777.
 
 ## Features
-- Language selection: English, Russian, and Spanish.
+- Language selection: English, Russian, Spanish, Chinese, Hindi, and Japanese.
 - Clean, minimalist design focused on readability and content.
 - Fully responsive design, optimized for both desktop and mobile devices.
 - Easy access to the blogger's social media and contact information.
