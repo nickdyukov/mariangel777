@@ -2,7 +2,7 @@
 @keyframes fade-in {
   0% {
     opacity: 0;
-    transform: translateX(290px);
+    transform: translateX(310px);
     filter: blur(1rem);
   }
   100% {
@@ -15,21 +15,4 @@
 main, footer {
   animation: fade-in 1.2s ease forwards;
   will-change: transform, opacity, filter;
-}
-
-/* ====== Language menu animation  ====== */
-@keyframes lang-menu {
-  0% {
-    opacity: 0;
-    transform: translateX(-180px);
-  }
-  100% {
-    opacity: 1;
-    transform: translateX(0);
-  }
-}
-
-nav.lang-menu.active {
-  animation: lang-menu 0.8s ease forwards;
-  will-change: transform, opacity;
 }
