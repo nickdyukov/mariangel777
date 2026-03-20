@@ -7,7 +7,7 @@ const translations = {
 
     title: "Maria Dyukova",
     main_text1: "#MotoGirl #Travel",
-    main_text2: "Total audience: 310,000",
+    main_text2: "Total audience: 320,000+",
 
     about_heading: "About me:",
     about_focus: "Main focus in life: Self-development and Living in the moment.",
@@ -18,7 +18,7 @@ const translations = {
 
     contact_methods_heading: "Contact Methods:",
     social_media_heading: "Social media:",
-    donates: '<img src="/assets/images/money.png" alt="" aria-hidden="true"> <a href="https://www.donationalerts.com/r/mariangel777" target="_blank" rel="me noopener noreferrer">Donate me ❤</a>',
+    donates: '<img src="/assets/images/money.png" alt="" aria-hidden="true"> <a href="https://www.donationalerts.com/r/mariangel777" target="_blank" rel="me noopener noreferrer">Donate ❤</a>',
     track_heading: "My track:",
 
     footer_copyright: "© 2026 Mariangel777. All rights reserved.",
@@ -34,7 +34,7 @@ const translations = {
 
     title: "Мария Дюкова",
     main_text1: "#МотоДевочка #Путешествия",
-    main_text2: "Общее количество аудитории: 310 000",
+    main_text2: "Общее количество аудитории: 320 000+",
 
     about_heading: "Обо мне:",
     about_focus: "Главное в жизни: Саморазвитие и Жить в моменте.",
@@ -61,7 +61,7 @@ const translations = {
 
     title: "María Dyukova",
     main_text1: "#ChicaMoto #Viajes",
-    main_text2: "Audiencia total: 310.000",
+    main_text2: "Audiencia total: 320.000+",
 
     about_heading: "Sobre mí:",
     about_focus: "Lo más importante en la vida: Desarrollo personal y Vivir el momento.",
@@ -88,7 +88,7 @@ const translations = {
 
     title: "玛丽亚·久科娃",
     main_text1: "#机车女孩 #旅行",
-    main_text2: "总粉丝：310,000",
+    main_text2: "总粉丝：320,000+",
 
     about_heading: "关于我：",
     about_focus: "人生中最重要的事：自我成长和活在当下。",
@@ -115,7 +115,7 @@ const translations = {
 
     title: "マリア・デュコワ",
     main_text1: "#モトガール #旅行",
-    main_text2: "総フォロワー数：310,000",
+    main_text2: "総フォロワー数：320,000+",
 
     about_heading: "私について：",
     about_focus: "人生で最も大切なこと：自己成長と今この瞬間を生きること。",
@@ -142,7 +142,7 @@ const translations = {
 
     title: "मारिया ड्यूकोवा",
     main_text1: "#मोटोगर्ल #यात्रा",
-    main_text2: "कुल दर्शक संख्या: 310,000",
+    main_text2: "कुल दर्शक संख्या: 320,000+",
 
     about_heading: "मेरे बारे में:",
     about_focus: "जीवन में सबसे महत्वपूर्ण बात: आत्म-विकास और वर्तमान में जीना।",
