@@ -19,13 +19,12 @@ img.mariangel777-photo {
 }
 
 .social img,
-.social-links img {
+.track-links img {
   display: inline-block;
   width: 1.6rem;
   height: 1.6rem;
+  top: 2px;
+  left: 4px;
   vertical-align: text-bottom;
   position: relative;
 }
-
-.social img { top: 0px; left: 4px; }
-.social-links img  { top: 0px; left: 2px; }
