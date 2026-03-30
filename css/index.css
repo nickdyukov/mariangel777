@@ -1,6 +1,14 @@
 /* ====== Main CSS imports ====== */
-@import url("/css/base.css");
-@import url("/css/elements.css");
-@import url("/css/layout.css");
-@import url("/css/components.css");
-@import url("/css/animations.css");
+@import "base/reset.css";
+@import "base/variables.css";
+@import "base/typography.css";
+@import "base/globals.css";
+
+@import "layout/layout.css";
+@import "layout/containers.css";
+
+@import "components/header.css";
+@import "components/images.css";
+@import "components/menu.css";
+
+@import "themes/dark.css";
