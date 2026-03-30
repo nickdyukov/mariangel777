@@ -18,7 +18,7 @@ themeToggles.forEach(btn => {
 });
 
 // ====== Language menu ======
-const languageBtn = document.querySelector(".lang-btn");
+const languageBtn = document.querySelector(".menu-btn");
 const languageMenu = document.querySelector(".lang-menu");
 
 // === Toggle menu open/close when language button is clicked ===
