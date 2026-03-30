@@ -1,0 +1,12 @@
+/* ====== Variables ====== */
+:root {
+  --color-text: #111;
+  --color-bg: #fff;
+
+  --padding-block: 1.5rem;  
+
+  --border: 3px solid #111;
+  --border-radius: 3rem;
+
+  --transition: all 0.4s ease;
+}

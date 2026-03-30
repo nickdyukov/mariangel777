@@ -1,0 +1,23 @@
+.main-content,
+.about,
+.social,
+.track-links {
+  background: var(--color-bg);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  padding: var(--padding-block);
+  transition: var(--transition);
+  width: 88%;
+}
+
+.main-content { max-width: 32rem; }
+.about        { max-width: 48rem; }
+.social       { max-width: 28rem; }
+.track-links  { max-width: 24rem; }
+
+.main-content:hover,
+.about:hover,
+.social:hover,
+.social-links:hover {
+  transform: translateY(-1px) scale(1.01);
+}

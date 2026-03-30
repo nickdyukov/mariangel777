@@ -1,0 +1,32 @@
+.menu {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  top: 4rem;
+  background: #000;
+  padding: var(--padding-block);
+  gap: 1rem;
+  border-radius: 0.5rem;
+  border: 3px solid #fff;
+  transform: translateX(-120%);
+  transition: var(--transition);
+}
+
+.menu.active { transform: translateX(-5%); }
+
+/* ====== Mobile menu ====== */
+.mobile-btn { display: none; }
+
+.mobile-btn img { 
+  display: inline-block;
+  width: 1rem;
+  height: 1rem;
+  vertical-align: text-bottom;
+}
+
+.mobile-menu button { align-self: flex-start; }
+
+@media (max-width: 425px) {
+  .mobile-btn { display: block; }
+  .menu-btn, .theme-toggle { display: none; }
+}

@@ -1,0 +1,20 @@
+/* ====== Dark theme ====== */
+body.dark { background: #121212 }
+body.dark { color: #fff; }
+body.dark h1, 
+body.dark h2, 
+body.dark h3, 
+body.dark h4, 
+body.dark h5, 
+body.dark h6,
+body.dark p { color: inherit; }
+body.dark a { color: rgb(160, 160, 255); }
+body.dark a:hover { color: inherit; }
+
+body.dark .main-content,
+body.dark .about,
+body.dark .social,
+body.dark .track-links {
+  background: #151515;
+  border: 3px solid #fff;
+}
