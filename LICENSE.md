@@ -1,13 +1,13 @@
 Copyright (c) 2026 Maria Dyukova (Mariangel777)
 
-You are allowed to:
-- View and read this website.
+Permission is granted to:
+- View and access this website.
 - Share links to this website for non-commercial purposes.
 
-You are NOT allowed to:
-- Copy or reuse the website design, layout, or visual style.
-- Copy the source code or use it in other projects.
-- Create derivative works based on this website.
-- Use this website or its content for commercial purposes.
+The following actions are NOT permitted:
+- Copying or reusing the website design, layout, or visual style.
+- Copying or redistributing the source code in any form.
+- Creating derivative works based on this website.
+- Using this website or its content for commercial purposes without explicit permission.
 
 All rights reserved.
