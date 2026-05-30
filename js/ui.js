@@ -1,33 +1,32 @@
-// ====== Theme Management ======
-// === Restore saved theme or default to dark ===
+// ========== Theme Management ==========
+// ===== Restore saved theme or default to dark =====
 const savedTheme = localStorage.getItem("theme") || "dark";
+document.body.classList.add(savedTheme);
 
-document.body.classList.toggle("dark", savedTheme === "dark");
-document.body.classList.toggle("light", savedTheme === "light");
+const themeToggle = document.querySelector(".header__buttons-theme-toggle");
 
-const themeToggles = document.querySelectorAll(".theme-toggle, .mobile-theme-toggle");
+if (themeToggle) {
+themeToggle.addEventListener("click", () => {
+  const isDark = document.body.classList.contains("dark");
 
-themeToggles.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const isDark = document.body.classList.toggle("dark");
-    document.body.classList.toggle("light", !isDark);
+  document.body.classList.remove("dark", "light");
+  document.body.classList.add(isDark ? "light" : "dark");
 
-    // === Save the selected theme in localStorage ===
-    localStorage.setItem("theme", isDark ? "dark" : "light");
-  });
+  localStorage.setItem("theme", isDark ? "light" : "dark");
 });
+}
 
-// ====== Language menu ======
-const languageBtn = document.querySelector(".menu-btn");
-const languageMenu = document.querySelector(".lang-menu");
+// ========== Language menu ==========
+const languageBtn = document.querySelector(".header__menu-btn");
+const languageMenu = document.querySelector(".header__lang-menu");
 
-// === Toggle menu open/close when language button is clicked ===
+// ===== Toggle menu open/close when language button is clicked =====
 if (languageBtn && languageMenu) {
   languageBtn.addEventListener("click", () => {
     languageMenu.classList.toggle("active");
   });
 
-  // === Close the language menu when clicking outside of it ===
+// ===== Close the language menu when clicking outside of it =====
   document.addEventListener("click", (event) => {
     if (!languageBtn.contains(event.target) && !languageMenu.contains(event.target)) {
       languageMenu.classList.remove("active");
@@ -35,29 +34,77 @@ if (languageBtn && languageMenu) {
   });
 }
 
-// ====== Mobile menu ======
-const mobileBtn = document.querySelector(".mobile-btn");
-const mobileMenu = document.querySelector(".mobile-menu");
+// ========== Language detection ==========
+function getLang() {
+  const path = window.location.pathname;
 
-// === Toggle menu open/close when menu button is clicked ===
-if (mobileBtn && mobileMenu) {
-  mobileBtn.addEventListener("click", () => {
-    mobileMenu.classList.toggle("active");
-  });
+  if (path.startsWith("/ru")) return "ru";
+  if (path.startsWith("/es")) return "es";
+  if (path.startsWith("/ja")) return "ja";
+  if (path.startsWith("/zh")) return "zh";
+  if (path.startsWith("/hi")) return "hi";
 
-  // === Close the mobile menu when clicking outside of it ===
-  document.addEventListener("click", (event) => {
-    if (!mobileBtn.contains(event.target) && !mobileMenu.contains(event.target)) {
-      mobileMenu.classList.remove("active");
-    }
-  });
+  return "en";
 }
 
-// ====== Home button ======
-const homeBtn = document.querySelector(".home-btn");
+// ========== Rotating titles ==========
+const titlesByLang = {
+  en: [
+    "Moto Blogger",
+    "Blogger",
+    "Content Creator",
+    "Travel Rider",
+    "Mariangel777"
+  ],
+  ru: [
+    "Мото-Блогер",
+    "Блогер",
+    "Контент Мейкер",
+    "Путешественник",
+    "Mariangel777"
+  ],
+  es: [
+    "Motoblogger",
+    "Bloguero",
+    "Creador de contenido",
+    "Viajero",
+    "Mariangel777"
+  ],
+  ja: [
+    "バイクブロガー",
+    "ブロガー",
+    "コンテンツクリエイター",
+    "トラベルライダー",
+    "Mariangel777"
+  ],
+  zh: [
+    "摩托博主",
+    "博主",
+    "内容创作者",
+    "旅行骑手",
+    "Mariangel777"
+  ],
+  hi: [
+    "मोटो ब्लॉगर",
+    "ब्लॉगर",
+    "कंटेंट क्रिएटर",
+    "ट्रैवल राइडर",
+    "Mariangel777"
+  ]
+};
 
-if (homeBtn) {
-  homeBtn.addEventListener("click", () => {
-    window.location.href = "/";
-  });
+const lang = getLang();
+const titles = titlesByLang[lang] || titlesByLang.en;
+
+let index = 0;
+const titleElement = document.querySelector(".header__titles-highlight");
+
+if (titleElement) {
+  function changeText() {
+    titleElement.textContent = titles[index];
+    index = (index + 1) % titles.length;
+  }
+
+  changeText();
+  setInterval(changeText, 1500);
 }
