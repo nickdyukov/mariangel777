@@ -1,0 +1,22 @@
+/* ========== Global ========== */
+html, body {
+  max-width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+  font-family: system-ui, sans-serif;
+}
+
+html { scroll-behavior: smooth; }
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+header,
+main, 
+footer {
+  align-items: center;
+  text-align: center;
+}

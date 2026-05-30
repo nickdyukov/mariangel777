@@ -1,0 +1,57 @@
+/* ========== Header ========== */
+header { padding-top: 7rem; }
+
+.header__title {
+  margin-top: 2rem;
+  font-size: 2.2rem;
+  font-weight: 700;
+}
+
+.header__titles,
+.header__stats {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+
+.header__titles-highlight { color: #1563e0; }
+
+.header__title, 
+.header__titles { margin-bottom: 0.5rem; }
+
+/* ===== Header Social Media List ===== */
+.header__social-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .header__social-list { gap: 2rem; }
+}
+
+.header__social-list-icon {
+  width: 48px;
+  transition: 0.4s ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .header__social-list-icon:hover { transform: scale(1.1); }
+}
+
+/* ===== Main portrait ===== */
+.header__mariangel777-portrait {
+  max-width: 280px;
+  max-height: 280px;
+  object-fit: cover;
+  border: 4px solid #fff;
+  border-radius: 50%;
+}
+
+@media (min-width: 768px) {
+  .header__mariangel777-portrait {
+    max-width: 350px;
+    max-height: 350px;
+  }
+}

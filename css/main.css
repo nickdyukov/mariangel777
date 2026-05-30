@@ -1,0 +1,52 @@
+/* ========== Main ========== */
+main { margin-top: 7rem; }
+
+.about { margin: 3rem 0; }
+
+.about__heading {
+  font-size: 36px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.about__text {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .about__heading { font-size: 28px; }
+  .about__text { font-size: 20px; }
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 8px;
+  max-width: 1600px;
+  margin: auto;
+}
+
+@media (max-width: 768px) {
+  .grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.about__travel { margin: 3rem 0; }
+
+.about__travel-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.about__travel-list-item {
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+@media (max-width: 768px) {
+  .about__travel-title { font-size: 24px; }
+  .about__travel-list-item { font-size: 16px; }
+}

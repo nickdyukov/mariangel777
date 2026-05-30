@@ -1,0 +1,41 @@
+/* ========== Track page ========== */
+
+.track__main {
+  margin: 0 10rem;
+}
+
+.track__main-cover {
+  max-width: 500px;
+  border: 2px solid #fff;
+  border-radius: 1rem;
+}
+
+.track__title {
+
+}
+
+/* ===== Social Media List ===== */
+.track__social-list {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-top: 3rem;
+  flex-wrap: wrap;
+}
+
+@media (min-width: 768px) {
+  .track__social-list { gap: 2rem; }
+}
+
+.track__social-list-icon {
+  width: 48px;
+  transition: 0.4s ease;
+  filter: invert(1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .track__social-list-icon:hover {
+    opacity: 0.9;
+    transform: scale(1.05);
+  }
+}

@@ -1,5 +1,5 @@
-/* ====== Dark theme ====== */
-body.dark { background: #121212 }
+/* ========== Dark theme ========== */
+body.dark { background: #080808; transition: 0.4s ease; }
 body.dark { color: #fff; }
 body.dark h1, 
 body.dark h2, 
@@ -8,13 +8,20 @@ body.dark h4,
 body.dark h5, 
 body.dark h6,
 body.dark p { color: inherit; }
-body.dark a { color: rgb(160, 160, 255); }
-body.dark a:hover { color: inherit; }
+body.dark a { color: #1400cc; }
+body.dark a:hover { color: #fff; }
 
-body.dark .main-content,
-body.dark .about,
-body.dark .social,
-body.dark .track-links {
-  background: #151515;
-  border: 3px solid #fff;
+body.dark .header__lang-menu { 
+  background-color: #000;
+  border: 2px solid #fff;
 }
+
+body.dark .header__language-list-item::after { background-color: #fff; }
+
+body.dark .header__social-list-icon { filter: invert(1); }
+
+body.dark .header__nav-list a { color: #ccc; }
+body.dark .header__nav-list a:hover { color: #fff; }
+
+body.dark .header__language-list-item a { color: #fff; }
+body.dark .header__language-list-item a:hover { color: #1400cc; }
