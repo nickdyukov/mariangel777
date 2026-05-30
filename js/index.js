@@ -1,3 +1,2 @@
-// ====== Main JavaScript imports ======
+// ========== Main JavaScript import ==========
 import "/js/ui.js";
-import "/js/translations.js";
