@@ -1,25 +1,28 @@
 /* ========== Track page ========== */
-
-.track__main {
-  margin: 0 10rem;
-}
-
-.track__main-cover {
+.main__track-cover {
   max-width: 500px;
   border: 2px solid #fff;
   border-radius: 1rem;
 }
 
-.track__title {
-
+@media (max-width: 768px) {
+  .main__track-cover { max-width: 400px; }
 }
+
+@media (max-width: 425px) {
+  .main__track-cover { max-width: 300px; }
+}
+
+.main__info { margin: 2rem 0; }
+
+.main__title { margin-bottom: 0.5rem; }
 
 /* ===== Social Media List ===== */
 .track__social-list {
   display: flex;
   justify-content: center;
   gap: 1.5rem;
-  margin-top: 3rem;
+  margin: 2rem 0 3rem 0;
   flex-wrap: wrap;
 }
 
@@ -28,9 +31,8 @@
 }
 
 .track__social-list-icon {
-  width: 48px;
+  max-width: 48px;
   transition: 0.4s ease;
-  filter: invert(1);
 }
 
 @media (hover: hover) and (pointer: fine) {
