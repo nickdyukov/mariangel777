@@ -1,4 +1,4 @@
-Copyright (c) 2026 Maria Dyukova (Mariangel777)
+Copyright © 2026 Maria Dyukova (Mariangel777)
 
 Permission is granted to:
 - View and access this website.
