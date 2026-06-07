@@ -1,24 +1,6 @@
-// ========== Theme Management ==========
-// ===== Restore saved theme or default to dark =====
-const savedTheme = localStorage.getItem("theme") || "dark";
-document.body.classList.add(savedTheme);
-
-const themeToggle = document.querySelector(".header__buttons-theme-toggle");
-
-if (themeToggle) {
-themeToggle.addEventListener("click", () => {
-  const isDark = document.body.classList.contains("dark");
-
-  document.body.classList.remove("dark", "light");
-  document.body.classList.add(isDark ? "light" : "dark");
-
-  localStorage.setItem("theme", isDark ? "light" : "dark");
-});
-}
-
 // ========== Language menu ==========
-const languageBtn = document.querySelector(".header__menu-btn");
-const languageMenu = document.querySelector(".header__lang-menu");
+const languageBtn = document.querySelector(".header__buttons-menu");
+const languageMenu = document.querySelector(".header__language-menu");
 
 // ===== Toggle menu open/close when language button is clicked =====
 if (languageBtn && languageMenu) {
@@ -107,4 +89,13 @@ if (titleElement) {
 
   changeText();
   setInterval(changeText, 1500);
+}
+
+// ========== Home button ==========
+const homeBtn = document.querySelector(".header__buttons-home");
+
+if (homeBtn) {
+  homeBtn.addEventListener("click", () => {
+    window.location.href = '/';
+  });
 }
