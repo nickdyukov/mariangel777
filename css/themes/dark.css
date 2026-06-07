@@ -8,10 +8,10 @@ body.dark h4,
 body.dark h5, 
 body.dark h6,
 body.dark p { color: inherit; }
-body.dark a { color: #1400cc; }
+body.dark a { color: #1700e7; }
 body.dark a:hover { color: #fff; }
 
-body.dark .header__lang-menu { 
+body.dark .header__language-menu { 
   background-color: #000;
   border: 2px solid #fff;
 }
@@ -24,4 +24,6 @@ body.dark .header__nav-list a { color: #ccc; }
 body.dark .header__nav-list a:hover { color: #fff; }
 
 body.dark .header__language-list-item a { color: #fff; }
-body.dark .header__language-list-item a:hover { color: #1400cc; }
+body.dark .header__language-list-item a:hover { color: #1700e7; }
+
+body.dark .track__social-list-icon { filter: invert(1); }
